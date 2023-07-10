@@ -6,10 +6,6 @@
     background-color: #ffe7328d;
 }
 
-
-    
-
-
 .divfooter {
    display: flex;
    align-content:flex-end;
@@ -29,11 +25,6 @@ p {
     font-family: 'Open Sans', sans-serif;
     font-size: medium;
 }
-
-
-
-
-
 
 .display1 {
     display: inline;
