@@ -33,7 +33,7 @@ body {font-family: "Lato", sans-serif}
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<!-- Navbar en pantallas chicas  -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
   <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
   <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
@@ -41,10 +41,9 @@ body {font-family: "Lato", sans-serif}
   <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
 </div>
 
-<!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
 
-  <!-- Automatic Slideshow Images -->
+  <!-- Grilla de imagenes automatica cada 4s -->
   <div class="mySlides w3-display-container w3-center">
     <img src="./media/images/deftones4-750x420.jpg" style="width:100%">
     <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
@@ -184,12 +183,7 @@ body {font-family: "Lato", sans-serif}
       </div>
     </div>
   </div>
-  
-<!-- End Page Content -->
 </div>
-
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
@@ -202,7 +196,7 @@ body {font-family: "Lato", sans-serif}
 </footer>
 
 <script>
-// Automatic Slideshow - change image every 4 seconds
+/* Presentación de diapositivas automática: cambia la imagen cada 4 segundos */
 var myIndex = 0;
 carousel();
 
@@ -218,7 +212,7 @@ function carousel() {
   setTimeout(carousel, 4000);    
 }
 
-// Used to toggle the menu on small screens when clicking on the menu button
+/* Se usa para alternar el menú en pantallas pequeñas al hacer clic en el botón de menú */
 function myFunction() {
   var x = document.getElementById("navDemo");
   if (x.className.indexOf("w3-show") == -1) {
@@ -228,7 +222,7 @@ function myFunction() {
   }
 }
 
-// When the user clicks anywhere outside of the modal, close it
+/* Cuando el usuario haga clic en cualquier lugar fuera del modal, ciérrelo */
 var modal = document.getElementById('ticketModal');
 window.onclick = function(event) {
   if (event.target == modal) {
