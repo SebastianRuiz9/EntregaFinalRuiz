@@ -1,0 +1,46 @@
+* {
+    background-color: #000000;
+    color: antiquewhite;
+}
+.maintext{
+    background-color: #ffe7328d;
+}
+
+
+    
+
+
+.divfooter {
+   display: flex;
+   align-content:flex-end;
+   justify-content: end;
+   flex-direction: row-reverse;
+}
+
+
+h1 {
+    color: antiquewhite;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+p {
+    color: antiquewhite;
+    font-family: 'Open Sans', sans-serif;
+    font-size: medium;
+}
+
+
+
+
+
+
+.display1 {
+    display: inline;
+}
+
+
+
+
+
+
