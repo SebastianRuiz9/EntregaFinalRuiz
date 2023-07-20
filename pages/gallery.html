@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>GALERY</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="band.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">BAND</a>
+    <a href="tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">TOUR</a>
+    <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">GALERY</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+</div>
+
+<!-- Navbar en pantallas chicas  -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="band.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
+  <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
+  <a href="gallery.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">GALERY</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+</div>
+
+<!-- Gallery section -->
+<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+  <h2 class="w3-wide">GALLERY</h2>
+  <p class="w3-opacity"><i>Be quiet and drive (far away) </i></p>
+  <p class="w3-justify"> In 1988 Deftones formed in Sacramento, California. During the early years, the band embraced a heavy nu metal sound, but with the release of the band's third studio album "White Pony" (2000) the band embraced a new direction. It was the first album to include keyboardist and turntablist Frank Delgado while seeing lead vocalist Chino Moreno on rhythm guitar. The album also produced the band's most commercially successful single "Change (In the House of Flies).Today, almost 26 years after their debut Adrenaline, it's worth taking a step back and appreciating the work of this band, not only behind their productions but on stage. From Stephen Carpenter's heavy metal riffs, Chino Moreno's penetrating accent and Frank Delgado's dash of DJing, they have always made the band evolve and add a good dose of strength, quality of interpretation and energy to their fans during their shows. live, where even today we still miss the original bassist Chi Cheng.</p>
+
+  <div class="w3-row w3-padding-32">
+    <div class="w3-third">
+      <p> War Of The Gargantuans Tour, 1996</p>
+      <img src="../media/images/warofthegargantus.jpg" class="w3-round w3-margin-bottom" alt="Chino Moreno" style="width:80%">
+    </div>
+    <div class="w3-third">
+      <p> Area 4 Festival, 2009 </p>
+      <img src="../media/images/area-4.jpg" class="w3-round w3-margin-bottom" alt="Chi Cheng" style="width:80%">
+    </div>
+    <div class="w3-third">
+      <p> The Press Club, 1997 </p>
+      <img src="../media/images/thepressclub.jpg" class="w3-round" alt="Stephen Carpenter" style="width:80%">
+    </div>
+</div>
+<div class="w3-row w3-padding-32">
+  <div class="w3-third">
+    <p>Día de los Deftones, 2018</p>
+    <img src="../media/images/diadelosdeftones.jpg" class="w3-round w3-margin-bottom" alt="Sergio Vega" style="width:80%">
+  </div>
+  <div class="w3-third">
+    <p>Arrow Hall Missianuga, 2003</p>
+    <img src="../media/images/arrowhall.jpg" class="w3-round w3-margin-bottom" alt="Abe Cunningham" style="width:80%">
+  </div>
+  <div class="w3-third">
+    <p> Meltdown Festival, 2018</p>
+    <img src="../media/images/meltdown.jpg" class="w3-round w3-margin-bottom" alt="Dominic Garcia" style="width:80%">
+  </div>
+</div>
+
+  <script>
+
+    /* Se usa para alternar el menú en pantallas pequeñas al hacer clic en el botón de menú */
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else { 
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+    </script>
+  <!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+</body>
+</html>
