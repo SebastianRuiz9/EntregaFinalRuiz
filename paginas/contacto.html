@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title> Contacto </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/estilos.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+</head>
+<body>
+<!-- Navbar -->
+<header>
+    <div class="w3-top">
+        <div class="w3-bar w3-black w3-card">
+            <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+            <a href="../index.html" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
+            <a href="tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tour</a>
+            <a href="merch.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Merch</a>
+            <a href="discografia.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Discografia</a>
+            <a href="contacto.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacto</a>
+    </div>
+
+<!-- Navbar en pantallas chicas  -->
+    <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tour</a>
+        <a href="merch.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Merch</a>
+        <a href="discografia.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Discografia</a>
+        <a href="contacto.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacto</a>
+    </div>
+</header>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px"></div>
+
+<!-- Contacto -->
+<div class="content">
+
+    <h1 class="logo"><span>Contacto</span></h1>
+
+    <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+            <h3>Contacto </h3>
+            <form action="">
+                <p>
+                    <label>Nombre completo</label>
+                    <input type="text" name="Nombre completo">
+                </p>
+                <p>
+                    <label>Direccion de email </label>
+                    <input type="email" name="email">
+                </p>
+                <p>
+                    <label>Numero de celular</label>
+                    <input type="tel" name="phone">
+                </p>
+                <p>
+                    <label> Asunto </label>
+                    <input type="text" name="asunto">
+                </p>
+                <p class="block">
+                   <label> Mensaje </label> 
+                    <textarea name="message" rows="3"></textarea>
+                </p>
+                <p class="block">
+                    <button>
+                        Enviar
+                    </button>
+                </p>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h4> Mas Informacion </h4>
+            <ul> 
+                <li><i class="fa fa-location-arrow">Buenos Aires </i>
+                <li><i class="fa fa-phone">(011) 123-456</i>
+                <li><i class="fa fa-envelope"> asdasd@gmail.com </i> 
+            </ul>
+            <p>Me interesa conocerte y saber tú opinión al respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias. Recuerda que tú opinion es de gran interes!</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container-fluid w3-padding-64 w3-center  w3-black w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+</footer>
+
+<script>
+  /* Se usa para alternar el menú en pantallas pequeñas al hacer clic en el botón de menú */
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+</body>
+</html>
