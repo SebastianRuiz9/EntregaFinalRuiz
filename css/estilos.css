@@ -15,8 +15,34 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: antiquewhite;
+    background: rgb(0, 0, 0);
 }
+
+/* estilos de index */
+
+.bg-img-1 {
+    background-image: url(../imagenes/imagine-dragons-1.jpg);
+}
+
+.bg-img-2 {
+    background-image: url(../imagenes/imagine-dragons-2.jpg);
+}
+
+.bg-img-3 {
+	background-image: url(../imagenes/imagine-dragons-3.jpg);
+}
+
+.bg-img-4 {
+	background-image: url(../imagenes/imagine-dragons-4.jpg);
+}
+
+.carousel-image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
 
 /* ESTILOS DE MERCH */
 .container {
@@ -552,7 +578,7 @@ ul {
 }
 
 .logo span {
-    color: #000000;
+    color: #ffffff;
 }
 
 .contact-wrapper > * {
@@ -560,7 +586,7 @@ ul {
 }
 
 .contact-form {
-    background: rgb(234, 76, 76);
+    background: lightslategrey
 }
 
 .contact-form form {
@@ -602,9 +628,9 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-    background: rgb(228, 26, 26);
+    background: rgb(72, 72, 72);
     color: #ffffff;
-    transition: background-color 1s ease-out;
+    transition: background-color 0.5s ease-out;
     outline: 0;
 }
 
@@ -612,10 +638,10 @@ ul {
 
 /* CONTACT INFO */
 .contact-info {
-    background: antiquewhite;
+    background: lightslategrey;
 }
 
-.contact-info h4, .contact-info ul, .contact-info p {
+.contact-info h3, .contact-info ul, .contact-info p {
     text-align: center;
     margin: 0 0 1rem 0;
 }

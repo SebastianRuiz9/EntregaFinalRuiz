@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Imagine Dragons </title>
+<title> Imagine Dragons </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
+<link rel="stylesheet" href="css/estilos.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
 
@@ -21,7 +20,7 @@ body {font-family: "Lato", sans-serif}
             <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
             <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Inicio</a>
             <a href="paginas/tour.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tour</a>
-            <a href="paginas/merch.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Merch</a>
+            <a href="paginas/tienda.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Tienda</a>
             <a href="paginas/discografia.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Discografia</a>
             <a href="paginas/contacto.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contacto</a>
     </div>
@@ -29,7 +28,7 @@ body {font-family: "Lato", sans-serif}
 <!-- Navbar en pantallas chicas  -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
         <a href="paginas/tour.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tour</a>
-        <a href="paginas/merch.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Merch</a>
+        <a href="paginas/tienda.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Tienda</a>
         <a href="paginas/discografia.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Discografia</a>
         <a href="paginas/contacto.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contacto</a>
     </div>
@@ -37,45 +36,49 @@ body {font-family: "Lato", sans-serif}
 
 <div class="w3-content" style="max-width:2000px;margin-top:46px"></div>
 
-  <!-- Grilla de imagenes automatica cada 4s -->
-<div class="mySlides w3-display-container w3-center">
-    <img src="imagenes/imagine-dragons-1.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h1> Imagine Dragons </h1>
-      <p><b> ¡Por esto amamos venir a Argentina! </b></p>   
+<body>
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-image bg-img-1 active">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h1> Imagine Dragons </h1>
+          <p><b> ¡Por esto amamos venir a Argentina! </b></p>   
+        </div>
+      </div>
+      <div class="carousel-item carousel-image bg-img-2">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h2> Estadio Velez </h2>
+          <p><b> ¡Gracias Velez, una noche que jamás olvidaremos! </b></p>    
+        </div>
+      </div>
+      <div class="carousel-item carousel-image bg-img-3">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h2> River Plate </h2>
+          <p><b> ¡La atmosfera en River fue increíble! </b></p>    
+        </div>
+      </div>
+      <div class="carousel-item carousel-image bg-img-4">
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <h2> Hipodromo de Palermo </h2>
+          <p><b> ¡La pasamos increíble tocando en Palermo! </b></p>   
+        </div>
     </div>
   </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="imagenes/imagine-dragons-2.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h2> Estadio Velez </h2>
-      <p><b> ¡Gracias Velez, una noche que jamas olvidaremos! </b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="imagenes/imagine-dragons-3.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h2> River Plate </h2>
-      <p><b> ¡La atmosfera en River fue increible! </b></p>    
-    </div>
-  </div>
-  <div class="mySlides w3-display-container w3-center">
-    <img src="imagenes/imagine-dragons-4.jpg" style="width:100%">
-    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-      <h2> Hipodromo de Palermo </h2>
-      <p><b> ¡La pasamos increible tocando en Palermo! </b></p>   
-    </div>
-</div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
 
 <!-- Footer -->
 <footer class="w3-container-fluid w3-padding-64 w3-center w3-black w3-xlarge">
-      <a class="fa fa-facebook-official w3-hover-opacity"></a>
-      <a class="fa fa-instagram w3-hover-opacity"></a>
-      <a class="fa fa-twitter w3-hover-opacity"></a>
-      <a class="fa fa-linkedin w3-hover-opacity"></a>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
 </footer>
 
 <script src="https://kit.fontawesome.com/306624cf22.js" crossorigin="anonymous"></script>
+
 
 <script>
 /* Presentación de diapositivas automática: cambia la imagen cada 4 segundos */
@@ -104,6 +107,11 @@ function myFunction() {
   }
 }
 </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+crossorigin="anonymous"></script>
+</body>
 
 </body>
 </html>
