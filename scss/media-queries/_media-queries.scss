@@ -1,0 +1,205 @@
+/* MEDIA QUERIES */
+
+/* media queries de tablet */
+
+@media screen and (max-width: 768px){
+
+/*media querie tienda*/
+
+html{
+    font-size: 55%;
+}
+.content-banner{
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+}
+
+.container-features {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 2rem;
+}
+
+.card-feature {
+    padding: 2rem;
+}
+
+.heading-1 {
+    font-size: 2.4rem;
+}
+
+.card-category {
+    height: 12rem;
+}
+
+.card-category p {
+    font-size: 2rem;
+    text-align: center;
+    line-height: 1;
+}
+
+.card-category span {
+    font-size: 1.4rem;
+}
+
+.container-options {
+    align-items: center;
+}
+
+.container-options span {
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.container-products {
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+}
+
+.gallery {
+    grid-template-rows: repeat(2, 15rem);
+}
+
+header{
+    flex-direction: column;
+}
+nav{
+    padding: 10px 0px;
+}
+
+
+
+/*media queries discografia */
+
+.contenedor-disco {
+    padding: 1rem;
+}
+.galeria {
+    grid-template-columns: repeat(2, 1fr);
+}
+.galeria-disco-1 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+.galeria-disco-2 {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+.galeria-disco-3 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 2;
+}
+.galeria-disco-4 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 2;
+}
+.galeria-disco-5 {
+    grid-column: 2 / span 1;
+    grid-row: 3 / span 1;
+}
+.galeria-disco-6 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 1;
+}
+.galeria-overlay {
+    font-size: 1.25rem;
+}
+
+/* Media Querie de Contacto */
+
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.contact-wrapper > * {
+     padding: 2em;
+}
+
+.contact-info{
+    h3{
+        text-align: left;
+    }
+    ul{
+        text-align: left;
+    }
+    p{
+        text-align: left;
+    }
+}
+
+/* Mq de celulares */
+@media screen and (max-width: 468px) {
+
+    .galeria {
+        display: block;
+    }
+
+    .galeria-disco {
+        margin: .5rem;
+    }
+
+    .galeria-link {
+        height: 80vw;
+    }
+
+    .galeria-overlay {
+        font-size: 1rem;
+    }
+    html {
+		font-size: 42.5%;
+	}
+
+	.content-banner {
+		max-width: 50rem;
+		padding: 22rem 0;
+	}
+
+	.heading-1 {
+		font-size: 2.8rem;
+	}
+
+	.card-feature {
+		flex-direction: column;
+		border-radius: 2rem;
+	}
+
+	.feature-content {
+		align-items: center;
+        p{
+            font-size: 1.4rem;
+            text-align: center;
+        }
+        span{
+            font-size: 1.6rem;
+            text-align: center;
+        }
+	}
+}
+
+.container-options{
+    span{
+        font-size: 1.8rem;
+		padding: 1rem 1.5rem;
+		font-weight: 500;
+    }
+}
+
+.container-products {
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1rem;
+}
+
+
+.container-img{
+    .discount{
+        font-size: 2rem;
+    }
+}
+
+.content-card-product h3{
+    font-size: 2.2rem;
+}
+
+.gallery{
+    grid-template-rows: repeat(2, 20rem);
+}
+}

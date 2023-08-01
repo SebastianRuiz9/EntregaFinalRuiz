@@ -1,0 +1,37 @@
+/* INDEX */
+
+//import de utilidades
+
+@import "../utilidades/listas";
+@import "../utilidades/variables";
+
+
+body{
+    font-family: $fuente-principal;
+    background: black;
+}
+
+.bg-img-1{
+    background-image: url(../imagenes/imagine-dragons-1.jpg);
+}
+.bg-img-2{
+    background-image: url(../imagenes/imagine-dragons-2.jpg);
+}
+.bg-img-3{
+    background-image: url(../imagenes/imagine-dragons-3.jpg);
+}
+.bg-img-4{
+    background-image: url(../imagenes/imagine-dragons-4.jpg);
+}
+
+.carousel-image{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+
+
+

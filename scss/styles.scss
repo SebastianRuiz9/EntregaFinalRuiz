@@ -1,0 +1,17 @@
+/* reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//IMPORT PAGINAS
+
+@import "paginas/index";
+@import "paginas/tour";
+@import "paginas/merch";
+@import "paginas/discografia";
+@import "paginas/contacto";
+
+//IMPORT MEDIA QUERIES
+@import "media-queries/media-queries"
